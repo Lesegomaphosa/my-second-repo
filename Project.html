@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nail art</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-shadow: 0px 0px 10px #ffad1f;
+        font-size: 45px;
+      }
+      h2 {
+        text-align: center;
+        color: blueviolet;
+        text-decoration-line: underline;
+        font-weight: normal;
+      }
+      p {
+        margin: 0 auto;
+        padding-bottom: 40px;
+        background: linear-gradient(#e66465, #9198e5);
+      }
+      services {
+        text-decoration: underline;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        box-shadow: 0px 0px 10px #000000;
+
+      }
+      information {
+        color: blueviolet;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: o, 9;
+        cursor: pointer;
+        box-shadow: 0px 0px 20px #3c0606;
+      }
+
+      footer {
+        background: linear-gradient(#e66465, #9198e5);
+        text-align: center;
+        text
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>We do nails</h1>
+
+      <h2>
+        <em> Manicure and Pedicure</em>
+      </h2>
+    </div>
+    <br />
+    <p>
+      <strong>
+        At our salon,we specialize in creating stuning and long-lasting nail
+        designs that will leave you feeling confident and glamorous.Our
+        experienced technicians offer a wide range of manicure and pedicure
+        services,we use the highest quality products and the latest techniques
+        to ensure that your nails look and feel their best.whether you are
+        looking for basic or classic french manicure and pedicure we got you
+        covered. With our extensive range of polish colors ,designs and
+        finishes,we can create a look that suits your every mood and occasion.
+      </strong>
+    </p>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/148/712/original/OIP.jpg?1730026506"
+      class="img"
+    />
+    <h3>
+      <span class="infomation"></span>
+      <a href="htpps://www.maphosalesego.io"> more info </a>
+    </h3>
+    <button>Book appointment</button>
+    <footer>This page was built by Lesego Maphosa</footer>
+    <script>
+      function nailService() {
+        let name = prompt("what is your name?");
+        let email = prompt("what is your email address?");
+        let nailService = prompt(
+          "what type of nail service 💅 are you interested in?"
+        );
+        if (nailService === "Manicure" || nailService === "Pedicure") {
+          alert("THANK YOU!" + name + ",you can now book appointment!😊");
+        } else {
+          alert(
+            "NO WORRIES!😀 Our technicians are experts in a variety of styles and techniques"
+          );
+        }
+      }
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", nailService);
+    </script>
+  </body>
+</html>
